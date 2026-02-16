@@ -1,0 +1,20 @@
+[project]
+name = "fast-users-learning"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Pavlo Starobub",email = "starodub.pavlo@alsodev.md"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard] (>=0.129.0,<0.130.0)",
+    "sqlalchemy (>=2.0.46,<3.0.0)",
+    "alembic (>=1.18.4,<2.0.0)",
+    "asyncpg (>=0.31.0,<0.32.0)",
+    "fastapi-users[sqlalchemy] (>=15.0.4,<16.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
